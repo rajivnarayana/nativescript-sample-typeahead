@@ -4,10 +4,10 @@ This repository demonstrates the use of Observables within non angular based nat
 
 # Mission
 
-Set out to create an search page that talks to a remote web service to 
-get results with the desired search params. The search params are captured in a textfield that user can type into.
+Set out to create a search page that talks to a remote web service to 
+get results with desired search params. The search params are captured from a textfield that user types into.
 
-We want to get the results as user types but we also want to avoid unnecessary calls to the API as long is user is still typing.
+We want to get the results as user types but we also want to avoid unnecessary calls to the API as long user is still typing.
 
 # Set up
 
@@ -53,6 +53,7 @@ Complete source available at [search.ts](./app/search/search.ts)
 
 # Screen Shots
 <img src="https://raw.githubusercontent.com/rajivnarayana/nativescript-sample-typeahead/master/APISearchResults.png" width="320"/>
+<img src="https://raw.githubusercontent.com/rajivnarayana/nativescript-sample-typeahead/master/AndroidSearchResults.png" width="320"/>
 
 # Promises and Observables
 
@@ -71,4 +72,4 @@ delay(2000).then(() => {
 })
 ```
 
-An observable, from [RxJS](https://xgrommx.github.io/rx-book/content/observable/index.html) is an object that sends notifications. Please refer [Introduction by Andre Saltz](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)
+An observable, from [RxJS](https://xgrommx.github.io/rx-book/content/observable/index.html), is an object that sends notifications. Please refer [Introduction by Andre Saltz](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)
