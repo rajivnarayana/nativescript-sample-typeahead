@@ -1,0 +1,20 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <Page.actionBar>
+      <ActionBar>
+        <StackLayout width="300">
+            <TextField text="{{text}}"/>
+        </StackLayout>
+      </ActionBar>
+  </Page.actionBar>
+  <ListView items="{{items}}" itemTap="itemTap">
+        <ListView.itemTemplate>
+            <GridLayout columns="100,*" height="48">
+    			<Image src="{{thumbnailImageSource}}" col="0" />
+    			<StackLayout col="1" style="margin-left : 3">
+    				<Label text="{{name}}" col="1" textWrap="true" style="font-weight:bold" />
+    				<Label text="{{description}}" col="1"/>
+    			</StackLayout>
+    		</GridLayout>
+        </ListView.itemTemplate>
+    </ListView>
+</Page>
